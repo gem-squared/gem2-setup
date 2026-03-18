@@ -1,4 +1,4 @@
-# @gemsquared/setup
+# @gem_squared/setup
 
 Auto-installer for [GEM² MCP](https://gemsquared.ai) tools. Detects your AI tools and registers the TPMN Checker MCP server in each one.
 
@@ -17,7 +17,7 @@ Auto-installer for [GEM² MCP](https://gemsquared.ai) tools. Detects your AI too
 ### Option 1: npx (recommended)
 
 ```bash
-npx @gemsquared/setup
+npx @gem_squared/setup
 ```
 
 ### Option 2: curl
@@ -35,7 +35,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/gem-squared/gem2-setup/main/i
 ## Uninstall
 
 ```bash
-npx @gemsquared/setup uninstall
+npx @gem_squared/setup uninstall
 ```
 
 Or:
