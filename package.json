@@ -1,0 +1,41 @@
+{
+  "name": "@gemsquared/setup",
+  "version": "1.0.1",
+  "description": "GEM² MCP auto-installer — registers TPMN Checker in Claude Code, Cursor, Windsurf, Claude Desktop, and VS Code",
+  "bin": {
+    "gem2-setup": "./bin/gem2-setup.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/gem2-setup.js"
+  },
+  "keywords": [
+    "gem2",
+    "mcp",
+    "tpmn",
+    "ai",
+    "claude",
+    "cursor",
+    "windsurf",
+    "truth-filter",
+    "model-context-protocol"
+  ],
+  "author": "GEM²-AI <hello@gemsquared.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gem-squared/gem2-setup.git"
+  },
+  "homepage": "https://gemsquared.ai/setup",
+  "bugs": {
+    "url": "https://github.com/gem-squared/gem2-setup/issues"
+  },
+  "files": [
+    "bin/",
+    "install.sh",
+    "uninstall.sh",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
