@@ -67,14 +67,14 @@ curl -sSL https://gemsquared.ai/uninstall | bash
 }
 ```
 
-Claude Desktop and Cursor use the `command` + `args` format with `@anthropic/mcp-remote` as a bridge:
+Claude Desktop and Cursor use the `command` + `args` format with `mcp-remote` as a bridge:
 
 ```json
 {
   "mcpServers": {
     "gem2-tpmn": {
       "command": "/path/to/npx",
-      "args": ["-y", "@anthropic/mcp-remote", "https://mcp-tpmn-checker.gemsquared.ai/mcp"]
+      "args": ["-y", "mcp-remote", "https://mcp-tpmn-checker.gemsquared.ai/mcp"]
     }
   }
 }

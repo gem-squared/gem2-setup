@@ -162,7 +162,7 @@ register_mcp() {
       fi
       jq --arg tpmn "$GEM2_TPMN_URL" --arg npx "$npx_path" \
         '.mcpServers = ((.mcpServers // {}) * {
-          "gem2-tpmn": {"command": $npx, "args": ["-y", "@anthropic/mcp-remote", $tpmn]}
+          "gem2-tpmn": {"command": $npx, "args": ["-y", "mcp-remote", $tpmn]}
         })' "$config_file" > "$tmp" && mv "$tmp" "$config_file"
       ;;
     *)
