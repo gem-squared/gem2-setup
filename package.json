@@ -1,6 +1,6 @@
 {
   "name": "@gem_squared/setup",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "GEM² MCP auto-installer — registers TPMN Checker in Claude Code, Cursor, Windsurf, Claude Desktop, and VS Code",
   "bin": {
     "gem2-setup": "./bin/gem2-setup.js"

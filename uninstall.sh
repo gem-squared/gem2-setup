@@ -6,9 +6,8 @@ set -euo pipefail
 # Does NOT remove any other MCP entries or user data.
 #
 # Usage:
-#   curl -sSL https://gemsquared.ai/uninstall | bash
-#   npx @gemsquared/setup uninstall
-#   bash <(curl -sSL https://raw.githubusercontent.com/gem-squared/gem2-setup/main/uninstall.sh)
+#   npx @gem_squared/setup uninstall
+#   curl -sSL https://user-mgmt.gemsquared.ai/setup/uninstall | bash
 
 # ─── Colors ───
 RED='\033[0;31m'
@@ -79,7 +78,13 @@ for entry in "${configs[@]}"; do
   fi
 done
 
+# Clean up launcher
+if [ -d "$HOME/.gem2" ]; then
+  rm -rf "$HOME/.gem2"
+  ok "Removed ~/.gem2 launcher"
+fi
+
 printf "\n"
 info "GEM² MCP entries removed. Restart your AI tools to apply."
-info "Re-install anytime: curl -sSL https://gemsquared.ai/install | bash"
+info "Re-install anytime: npx @gem_squared/setup"
 printf "\n"

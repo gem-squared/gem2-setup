@@ -7,8 +7,8 @@
  * This wrapper exists so `npx @gemsquared/setup` works cross-platform.
  *
  * Usage:
- *   npx @gemsquared/setup            # install
- *   npx @gemsquared/setup uninstall  # uninstall
+ *   npx @gem_squared/setup            # install
+ *   npx @gem_squared/setup uninstall  # uninstall
  */
 
 const { execFileSync } = require("child_process");
